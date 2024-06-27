@@ -1,5 +1,6 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -12,6 +13,9 @@
 typedef unsigned char int8;
 typedef unsigned short int int16;
 typedef unsigned int int32;
+
+typedef struct sockaddr SA;
+typedef struct sockaddr_in sock;
 
 typedef struct proxy_request {
   int8 vn;
